@@ -7,6 +7,10 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(numArray) {
+  return numArray.reduce((total, current) => total + current, 0);
+}
+
+/*const sum = function(numArray) {
 	let sumArray = 0;
   for (const num of numArray) {
     sumArray += num;
@@ -14,8 +18,13 @@ const sum = function(numArray) {
 
   return sumArray;
 };
+*/
 
 const multiply = function(numArray) {
+  return numArray.reduce((total, current) => total * current);
+}
+
+/*const multiply = function(numArray) {
   let multiplyArray = 1;
   for (const num of numArray) {
     multiplyArray *= num;
@@ -23,6 +32,7 @@ const multiply = function(numArray) {
 
   return multiplyArray;
 };
+*/
 
 const power = function(base, exp) {
   return base**exp;
