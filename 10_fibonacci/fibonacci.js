@@ -3,7 +3,7 @@ const fibonacci = function(member) {
         return 0;
     }
     
-    if (member <= 0) {
+    if (member < 0) {
         return "OOPS";
     }
     
